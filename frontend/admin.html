@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin console</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main>
+<div class="admin-shell hidden" id="admin-shell">
+  <aside class="side" id="side">
+    <h4>Overview</h4><button class="on" data-view="dashboard">Dashboard</button>
+    <h4>Catalogue</h4><button data-view="vehicles">Vehicles</button><button data-view="departments">Departments</button>
+    <h4>Sales</h4><button data-view="orders">Orders <span class="badge hidden" id="nb-orders">0</span></button><button data-view="inquiries">Enquiries <span class="badge hidden" id="nb-inq">0</span></button>
+    <h4>People</h4><button data-view="users">Customers</button>
+  </aside>
+  <section class="admin-main" id="admin-main"></section>
+</div>
+<div class="container"><div class="empty hidden" id="admin-denied" style="margin:60px 0"><h3>Admin access only</h3><p>Log in with an administrator account to open the console.</p><a class="btn" href="/login.html?next=/admin.html">Log in</a></div></div>
+</main>
+<script src="/config.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/admin.js"></script>
+</body>
+</html>

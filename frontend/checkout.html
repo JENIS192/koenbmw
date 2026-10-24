@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main>
+
+<div class="page-head"><div class="container"><h1>Checkout</h1><p class="muted" style="margin:0">Demo store: no real payment is taken.</p></div></div>
+<div class="container two-col" id="checkout-root">
+  <form class="card" id="checkout-form" novalidate>
+    <h3>Delivery details</h3>
+    <div class="form-msg" id="co-msg"></div>
+    <div class="grid-2"><div class="field"><label for="c-name">Full name</label><input id="c-name" required></div><div class="field"><label for="c-phone">Phone</label><input id="c-phone" required></div></div>
+    <div class="field"><label for="c-address">Address</label><input id="c-address" required></div>
+    <div class="grid-2"><div class="field"><label for="c-city">City</label><input id="c-city" required></div><div class="field"><label for="c-country">Country</label><input id="c-country" required value="India"></div></div>
+    <h3 style="margin-top:10px">Payment method</h3>
+    <div class="pay-options field">
+      <label class="pay-option"><input type="radio" name="pay" value="card" checked> Credit or debit card</label>
+      <label class="pay-option"><input type="radio" name="pay" value="bank_transfer"> Bank transfer</label>
+      <label class="pay-option"><input type="radio" name="pay" value="finance"> Vehicle finance</label>
+      <label class="pay-option"><input type="radio" name="pay" value="pay_on_delivery"> Pay on delivery</label>
+    </div>
+    <div class="field"><label for="c-notes">Notes for our team (optional)</label><textarea id="c-notes" maxlength="500"></textarea></div>
+    <button class="btn btn-block" id="place-btn" type="submit">Place order</button>
+  </form>
+  <aside class="card"><h3>Your order</h3><div id="co-summary"></div></aside>
+</div>
+</main>
+<div id="site-footer"></div>
+<script src="/config.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/checkout.js"></script>
+</body>
+</html>

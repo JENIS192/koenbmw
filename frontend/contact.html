@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main>
+
+<div class="page-head"><div class="container"><h1>Talk to our team</h1><p class="muted" style="margin:0">Book a test drive, ask about a vehicle or tell us what you want to sell.</p></div></div>
+<div class="container two-col">
+  <form class="card" id="contact-form" novalidate>
+    <div class="form-msg" id="ct-msg"></div>
+    <div class="field"><label for="ct-type">What can we help with?</label><select id="ct-type"><option value="enquiry">General enquiry</option><option value="test_drive">Book a test drive</option><option value="sell_car">Sell my car</option></select></div>
+    <div class="field" id="ct-vehicle-wrap"><label for="ct-vehicle">Vehicle (optional)</label><select id="ct-vehicle"><option value="">No specific vehicle</option></select></div>
+    <div class="grid-2"><div class="field"><label for="ct-name">Name</label><input id="ct-name" required></div><div class="field"><label for="ct-email">Email</label><input id="ct-email" type="email" required></div></div>
+    <div class="grid-2"><div class="field"><label for="ct-phone">Phone</label><input id="ct-phone"></div><div class="field" id="ct-date-wrap"><label for="ct-date">Preferred date</label><input id="ct-date" type="date"></div></div>
+    <div class="field"><label for="ct-message">Message</label><textarea id="ct-message" required></textarea></div>
+    <button class="btn" type="submit">Send message</button>
+  </form>
+  <aside class="card"><h3>Showroom hours</h3><table class="table-simple"><tr><th>Mon to Fri</th><td>9:00 to 18:00</td></tr><tr><th>Saturday</th><td>10:00 to 16:00</td></tr><tr><th>Sunday</th><td>By appointment</td></tr></table>
+  <p class="muted" style="margin-top:16px">Test drives need a valid driving licence. Hypercar drives are escorted by a company specialist.</p></aside>
+</div>
+</main>
+<div id="site-footer"></div>
+<script src="/config.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/contact.js"></script>
+</body>
+</html>

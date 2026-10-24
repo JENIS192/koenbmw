@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My account</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main>
+
+<div class="page-head"><div class="container"><h1>My account</h1><p class="muted" style="margin:0" id="acc-sub"></p></div></div>
+<div class="container" style="padding:28px 0 50px">
+  <div class="tabs" id="acc-tabs"><button class="on" data-tab="orders">Orders</button><button data-tab="inquiries">Test drives and enquiries</button><button data-tab="profile">Profile</button></div>
+  <div id="tab-orders"></div><div id="tab-inquiries" class="hidden"></div>
+  <div id="tab-profile" class="hidden"><div class="grid-2">
+    <form class="card" id="profile-form"><h3>Personal details</h3><div class="form-msg" id="pf-msg"></div>
+      <div class="field"><label for="p-name">Full name</label><input id="p-name" required></div>
+      <div class="field"><label for="p-email">Email</label><input id="p-email" disabled></div>
+      <div class="field"><label for="p-phone">Phone</label><input id="p-phone"></div>
+      <button class="btn" type="submit">Save changes</button></form>
+    <form class="card" id="pw-form"><h3>Change password</h3><div class="form-msg" id="pw-msg"></div>
+      <div class="field"><label for="pw-cur">Current password</label><input id="pw-cur" type="password" required></div>
+      <div class="field"><label for="pw-new">New password</label><input id="pw-new" type="password" minlength="6" required></div>
+      <button class="btn" type="submit">Update password</button></form>
+  </div></div>
+</div>
+</main>
+<div id="site-footer"></div>
+<script src="/config.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/account.js"></script>
+</body>
+</html>

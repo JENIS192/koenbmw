@@ -1,0 +1,6 @@
+# Frontend settings. The backend reads this file and serves it to the browser at /config.js
+APP_NAME=Apex & Bavaria Motors
+# Leave empty to call the API on the same origin (recommended, no CORS needed)
+API_BASE_URL=
+CURRENCY=USD
+LOCALE=en-US

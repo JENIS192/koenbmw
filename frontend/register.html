@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create account</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main>
+
+<div class="auth-wrap">
+  <div class="auth-art"><span class="mstripe" style="margin-bottom:18px"><i></i><i></i><i></i></span><h2>Create your account</h2><p class="muted">Save cars to your wishlist, reserve vehicles and follow your order from approval to delivery.</p></div>
+  <div class="auth-form"><form id="register-form" novalidate>
+    <h2>Create account</h2><div class="form-msg" id="msg"></div>
+    <div class="field"><label for="name">Full name</label><input id="name" autocomplete="name" required></div>
+    <div class="field"><label for="email">Email</label><input id="email" type="email" autocomplete="email" required></div>
+    <div class="field"><label for="phone">Phone (optional)</label><input id="phone" type="tel" autocomplete="tel"></div>
+    <div class="field"><label for="password">Password (6+ characters)</label><input id="password" type="password" autocomplete="new-password" required minlength="6"></div>
+    <button class="btn btn-block" type="submit">Create account</button>
+    <p class="muted" style="margin-top:16px">Already registered? <a href="/login.html">Log in</a></p>
+  </form></div>
+</div>
+</main>
+<div id="site-footer"></div>
+<script src="/config.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/auth.js"></script>
+</body>
+</html>

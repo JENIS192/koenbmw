@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>All vehicles</title>
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main>
+
+<div class="page-head"><div class="container"><div class="crumbs"><a href="/">Home</a> / Vehicles</div><h1 id="list-title">All vehicles</h1><p class="muted" id="list-sub" style="margin:0">Search and filter our current inventory.</p></div></div>
+<div class="container listing">
+  <aside class="filters">
+    <h3>Filters</h3>
+    <div class="field"><label for="f-q">Search</label><input id="f-q" placeholder="Model, colour or keyword"></div>
+    <div class="field"><label for="f-brand">Brand</label><select id="f-brand"><option value="">All brands</option></select></div>
+    <div class="field"><label for="f-fuel">Fuel type</label><select id="f-fuel"><option value="">Any fuel</option></select></div>
+    <div class="grid-2"><div class="field"><label for="f-min">Min price</label><input id="f-min" type="number" min="0" placeholder="0"></div><div class="field"><label for="f-max">Max price</label><input id="f-max" type="number" min="0" placeholder="Any"></div></div>
+    <div class="field"><label><input type="checkbox" id="f-avail"> Show available only</label></div>
+    <button class="btn btn-block" id="f-apply" type="button">Apply filters</button>
+    <button class="btn btn-ghost btn-block" id="f-reset" type="button" style="margin-top:8px">Reset</button>
+  </aside>
+  <section>
+    <div class="dept-chips" id="dept-chips"></div>
+    <div class="toolbar"><span class="muted" id="result-count"></span>
+      <select id="f-sort" aria-label="Sort"><option value="newest">Newest listed</option><option value="price_asc">Price: low to high</option><option value="price_desc">Price: high to low</option><option value="power">Most powerful</option><option value="year">Model year</option></select></div>
+    <div class="car-grid" id="car-grid"></div>
+    <div class="pager" id="pager"></div>
+  </section>
+</div>
+</main>
+<div id="site-footer"></div>
+<script src="/config.js"></script>
+<script src="/js/common.js"></script>
+<script src="/js/vehicles.js"></script>
+</body>
+</html>

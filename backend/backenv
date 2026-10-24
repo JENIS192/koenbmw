@@ -1,0 +1,23 @@
+# ---------- Server ----------
+PORT=5000
+NODE_ENV=development
+
+# ---------- MySQL database ----------
+DB_HOST=localhost
+DB_PORT=3306
+DB_USER=root
+DB_PASSWORD=
+DB_NAME=jesko_bmw_store
+
+# ---------- Auth ----------
+JWT_SECRET=change-this-to-a-long-random-secret-before-production
+JWT_EXPIRES_IN=7d
+
+# ---------- Default admin (created on first start) ----------
+ADMIN_NAME=Store Admin
+ADMIN_EMAIL=admin@jeskobmw.com
+ADMIN_PASSWORD=Admin@12345
+
+# ---------- Photo uploads ----------
+UPLOAD_DIR=uploads
+MAX_UPLOAD_MB=8
